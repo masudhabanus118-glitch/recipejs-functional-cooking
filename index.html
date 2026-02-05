@@ -1,24 +1,46 @@
-&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-&lt;meta charset=&quot;UTF-8&quot;&gt;
-&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-&lt;title&gt;RecipeJS - Your Functional Cooking Companion&lt;/title&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+<!DOCTYPE html>
+<html lang="en">
 
-&lt;/head&gt;
-&lt;body&gt;
-&lt;!-- Header Section --&gt;
-&lt;header&gt;
-&lt;h1&gt;RecipeJS&lt;/h1&gt;
-&lt;p&gt;Your Functional Cooking Companion&lt;/p&gt;
-&lt;/header&gt;
-&lt;!-- Main Content --&gt;
-&lt;main&gt;
-&lt;div id=&quot;recipe-container&quot;&gt;
-&lt;!-- Recipe cards will be rendered here by JavaScript --&gt;
-&lt;/div&gt;
-&lt;/main&gt;
-&lt;script src=&quot;app.js&quot;&gt;&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RecipeJS - Your Functional Cooking Companion</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>RecipeJS</h1>
+    <p>Your Functional Cooking Companion</p>
+  </header>
+
+  <main>
+
+    <div class="controls">
+
+      <!-- Filter Buttons -->
+      <div class="filters">
+        <button data-filter="all" class="active">All</button>
+        <button data-filter="easy">Easy</button>
+        <button data-filter="medium">Medium</button>
+        <button data-filter="hard">Hard</button>
+        <button data-filter="quick">Quick (&lt;30min)</button>
+      </div>
+
+      <!-- Sort Buttons -->
+      <div class="sorts">
+        <button data-sort="none" class="active">Default</button>
+        <button data-sort="name">Sort by Name</button>
+        <button data-sort="time">Sort by Time</button>
+      </div>
+
+    </div>
+
+    <div id="recipe-container"></div>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
